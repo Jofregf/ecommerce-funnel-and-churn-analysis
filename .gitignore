@@ -1,3 +1,5 @@
-data/
-*.csv
+data/*
+!data/processed/
 !data/processed/events_clean.parquet
+*.csv
+
