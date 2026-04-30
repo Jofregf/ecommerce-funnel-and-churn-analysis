@@ -12,12 +12,18 @@ A partir de datos de interacción (vistas, carritos y compras), se construyen m�
 * Generar recomendaciones orientadas a negocio
 
 ## 🗂️ Estructura del Proyecto
-ecommerce-funnel-and-churn-analysis/ 
-
-│ 
-
-├── data/ │ ├── raw/ # Datos originales (no incluidos) │ └── processed/ # Datos procesados (sample/parquet) │ ├── notebooks/ # Análisis exploratorio y métricas ├── sql/ # Queries de análisis (funnel, churn, revenue) ├── dashboard/ # Visualizaciones (Power BI / similares) ├── README.md
-
+```plaintext
+ecommerce-funnel-and-churn-analysis/
+│
+├── data/
+│   ├── raw/          # Datos originales (no incluidos)
+│   └── processed/    # Datos procesados (sample/parquet)
+│
+├── notebooks/        # Análisis exploratorio y métricas
+├── sql/              # Queries de análisis (funnel, churn, revenue)
+├── dashboard/        # Visualizaciones (Power BI / similares)
+├── README.md
+```
 ## 📄 Dataset
 El dataset no se incluye en el repositorio, debido a restricciones de tamaño.
 Podés descargarlo desde el siguiente enlace:
