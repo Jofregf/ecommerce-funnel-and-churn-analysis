@@ -95,6 +95,51 @@ Por otro lado, se observan productos con alto volumen de ventas pero menor conve
 
 Este analisis permitió identificar productos clave para estrategias comerciales, diferenciando aquellos que deben ser potenciados, optimizados o promocionados para maximizar el rendimiento del negocio.
 
+## 🔁 Análisis de churn
+Se analizó el comportamiento de recompra de los usuarios para estimar el nivel de retención dentro del período observado.
+
+### 📊 Resultado
+- churn rate: 80.0%
+
+### 🔍 Definición utilizada
+Dado que el dataset abarca un único mes, se definió churn como aquellos usuarios que realizaron una única compra durante el período.
+
+### 🔍 Insights
+Se observa que aproximadamente el 80% de los usuarios realiza una sola compra y no vuelve a interactuar, lo que indica un bajo nivel de retención.
+Esto sugiere que, si bien el funnel de conversión logra generar compras, existe una debilidad significativa en la fidelización de los clientes.
+
+### 📌 Conclusión
+El principal desafío del negocio no se encuentra únicamente en la conversión, sino en la retención de usuarios.
+Estrategias como programas de fidelización, campañas de marketing o mejoras en la experiencia post-compra podrían contribuir a aumentar la recurrencia de clientes.
+
+## 🔁 Análisis de churn por segmentos
+Se analizó la retención de usuarios segmentada por categoría y rango de precios para identificar patrones de fidelización.
+
+### 📊 Churn por categoría
+Se observan categorías con tasas de churn cercanas al 100%, especialmente en productos de tipo indumentaria y pequeños electrodomesticos.
+Esto indica que los usuarios suelen realizar compras únicas en estas categorías, lo cual es consistente con compartimientos de consumo no recurrentes.
+
+### 🔍 Insight
+No todas las categorías presentan el mismo potencial de retención. Algunas responden a compras ocasionales, por lo que las estrategías deberían enfocarse más en adquisición que en fidelización.
+
+### 💰 Churn por rango de precios
+- 0-50	86,6%
+- 50-150 85,6%
+- 150-300	85,2%
+- 300-600	85,3%
+- 600-1000	84,2%
+- 1000+	82,9%
+
+### 🔍 Insight
+Se observa una leve disminución del churn a medida que aumenta el precio del producto.
+Esto sugiere que los productos de mayor valor generan mayor compromiso por parte del usuario, mientras que los productos de bajo costo están más asociados a compras impulsivas con baja recurrencia.
+
+### 📌 Conclusión
+El análisis indica que tanto la categoría como el precio influyen en la retención de clientes.
+Las estrategias de negocio deberían adaptarse según el tipo de producto:
+- En categorías de compra ocasional -> foco en adquisición.
+- En productos de mayor valor -> foco en retención y fidelización.
+
 ## 🛠️ Tecnologías utilizadas
 * Python (pandas, numpy)
 * SQL
