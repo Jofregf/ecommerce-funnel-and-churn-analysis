@@ -146,5 +146,32 @@ Las estrategias de negocio deberían adaptarse según el tipo de producto:
 * Power BI (para visualización)
 * Git / GitHub
 
+## 🗄️ SQL (Simulación de entorno productivo)
+
+Además del análisis realizado en Python, se incluyen consultas SQL que replican las principales métricas del proyecto, simulando un entorno real donde los datos se almacenan en bases de datos relacionales.
+
+Las queries desarrolladas permiten:
+
+- Construir el funnel de conversión a nivel usuario
+- Analizar el funnel por categoría y rango de precio
+- Calcular métricas de churn (retención de clientes)
+- Evaluar churn segmentado por categoría y precio
+
+Estas consultas reflejan cómo el análisis sería implementado en un entorno productivo utilizando herramientas como PostgreSQL, BigQuery o Snowflake.
+
+📁 Ubicación: `sql/`
+
+### 📌 Ejemplo de query (Funnel de conversión)
+
+```sql
+SELECT
+    user_id,
+    MAX(CASE WHEN event_type = 'view' THEN 1 ELSE 0 END) AS viewed,
+    MAX(CASE WHEN event_type = 'cart' THEN 1 ELSE 0 END) AS carted,
+    MAX(CASE WHEN event_type = 'purchase' THEN 1 ELSE 0 END) AS purchased
+FROM events
+GROUP BY user_id;
+```
+
 ## 📌 Autor
 Guillermo Jofre
