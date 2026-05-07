@@ -2,4 +2,5 @@ data/*
 !data/processed/
 !data/processed/events_clean.parquet
 *.csv
+theme.json
 
